@@ -1,0 +1,84 @@
+/* @charset utf-8; */
+
+/* CSS 초기화 */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong,
+ sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+ details, figcaption, figure,
+ footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+ }
+
+ body{
+  font-family: NanumGothic, 나눔고딕, 'Nanum Gothic', '맑은 고딕', HelveticaNeue, DroidSans,
+  sans-serif, Helvetica;
+  background: url(../images/s_images/body_bg.png);
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+  display: block;
+  /* HTML5 태그들이 정상적으로 작동하도록 display 속성의 값을 block으로 설정합니다.*/
+}
+
+nav ul, li{
+  list-style: none;
+  /* <ul> 태그와 <li> 태그의 목록 스타일을 초기화합니다.*/
+}
+
+a{
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  text-decoration: none;
+  vertical-align: baseline;
+  color: #fff;
+  background: transparent;
+  /* a태그를 기본값으로 초기화합니다. */
+}
+
+img{
+ vertical-align: top;
+  /*아미지 태그의 간격을 없애기 우해 vertical-align 속성값을 top으로 설정합니다.*/
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  /* <table> 태그의 간격을 없애기 위해 간격값을 기본값으로 설정합니다. */
+}
+
+ input{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  vertical-align: top;
+  appearance: none;
+  border-radius: 0;
+  font-family: NanumGothic, 나눔고딕, 'Nanum Gothic', '맑은 고딕', HelveticaNeue, DroidSans,
+  sans-serif, Helvetica;
+ }
+
+ input::-moz-input-placeholder{
+  color: #e65d5d;
+ }
+
+ input::-webkit-input-placeholder{
+  color: #e65d5d;
+ }
+
+ /* 웹폰트 CSS */
+@font-face {
+  font-family: 'NanumGothic';
+  src: url(../webfont/NanumGothic.eot);
+}
+@font-face {
+  font-family: 'NanumGothic';
+  src: url(../webfont/NanumGothic.woff);
+}

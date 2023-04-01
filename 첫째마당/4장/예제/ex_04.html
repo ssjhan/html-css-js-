@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Document</title>
+<style>
+*{margin:0; padding:0;}
+
+#wrap{
+	display: flex;
+	flex-flow: row wrap-reverse; /* flex-direction 속성과 flex-wrap 동시에 적용함 */
+	width: 90%;
+	height: 500px;
+	margin:  0 auto;
+	border: 4px solid #000;
+}
+
+#wrap div{
+	width: 100%;
+}
+#wrap div:first-child{
+	background: #fd524d;
+}
+
+#wrap div:nth-child(2){
+	background: #5dfd;
+}
+
+#wrap div:nth-child(3){
+	 background: #d84;
+}
+
+
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<div></div><div></div><div></div>
+	</div>
+</body>
+</html>
